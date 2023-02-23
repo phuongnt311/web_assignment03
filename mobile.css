@@ -1,0 +1,23 @@
+@media only screen and (max-width: 570px) {
+    /*trang CV*/
+    .footer p{
+        display: none;
+    }
+    .footer1{
+        padding-left: 0;
+    }
+
+    .cv .decrip_certificate {
+        padding: 6% 0 0 4%;
+
+    }
+    .cv .project .decribe_pro {
+        height: 180px;
+    }
+    .cv .project .name_pro {
+        height: 60px;
+    }
+    .cv .destop a{
+        font-size: 15px;
+    }
+}

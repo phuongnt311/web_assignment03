@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    /*font chữ hệ thống*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --main-color: rgb(68, 162, 240);
+    --border-line:#d6c08d;
+    --db:#dbdbdb;
+}
+li::marker{
+    color:var(--main-color);
+}
+a{
+    text-decoration: none;/*bỏ underline thẻ a*/
+    color: black;
+}
+/*BANNER*/
+.banner{
+    position: relative;
+    text-align: center;
+}
+.per_name{
+    /*Set position cho banner và tên để tên nằm trên banner*/
+    position: absolute;
+    text-align: center;
+    /*top,left : set vị trí chính giữa cho tên*/
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.img_banner img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 390px;/*set chều cao cho banner<banner quá dài>*/
+    object-fit: cover;/*object-banner sẽ fit với chiều cao và chiều dài set*/
+    object-position: top;/*vị trí cắt ảnh tính từ trên xuống--khi không dùng sẽ lấy mặc định center*/
+    filter:brightness(50%);/*giảm độ sáng cho ảnh banner để rõ tên trên cv*/
+}
+
+/*navbar*/
+.destop{
+    padding: 10px;
+}
+.navbar-icon{
+    width: 20px;
+    color: var(--main-color);
+}
+.destop a{
+    text-decoration: none;/*bỏ underline thẻ a*/
+    text-transform: uppercase;/*set text là chữ in hoa*/
+    color: black;
+    font-size: 14px;
+}
+/*thông tin cá nhân*/
+#personal-info ul {
+    list-style: none;
+}
+.social_icon{
+    color:var(--main-color);
+}
+/*job-info*/
+.job-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap:5px;
+    row-gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ic{
+    font-size: 30px;
+}
+.border{
+    padding:10px 0 ;
+}
+/*ngon ngữ & kỹ năng*/
+.level_blue{
+    background: var(--main-color);
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+.level_gray{
+    background:var(--db);
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+/**sở thích*/
+.hoby_icon{
+    position: absolute;
+    color: var(--main-color);
+    font-size: 20px;
+    top:30%;
+}
+.circle{
+    background:transparent;/*màu nền trong suốt*/
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+
+    position: relative;
+
+}
+.title_details{
+    display: flex;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.col-3{
+    padding: 0 12px;
+}
+/*ngôn ngữ*/
+.list_skill{
+    padding: 0 10%;
+}
+/*certificates*/
+.certificates{
+    row-gap: 10px;
+    padding-bottom:50px;
+    margin: 10px;
+}
+.certificate1 img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    padding: 2% 0 2% 5%;
+}
+.bottom{
+    border-bottom:1px solid var(--border-line);
+}
+.border-right{
+    border-right:1px solid var(--border-line);
+}
+
+/*dự án*/
+.projects{
+    padding-bottom: 40px;
+}
+.projects .project img{
+    width: 100%;
+}
+.padding{
+    padding: 3% 5%;
+}
+.position{
+    display: flex;
+}
+/*FOOTER-liên hệ*/
+.footer{
+    width: 100%;
+    padding: 30px 0 30px 0px;
+    display: inline-flex;
+    justify-content: center;
+}
+.footer .ft{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #199cdb;
+}
+.footer1{
+    padding-left: 20px;
+    display: flex;
+    align-items: baseline;
+}
+.footer a{
+    text-decoration: none;
+    color: #0F1C3F;
+}
+/***/
+@media only screen and (min-width: 821px) {
+    .col-md-2{
+        display: flex;
+        justify-content: center;
+    }
+    .company{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cv .project .badge{
+        width: 5rem;
+    }
+    .footer p{
+        transform: translateY(-5px);
+    }
+    .footer .ft{
+        font-size: 300%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************/
+/* PROJECT CHARTER */
+.timeline .badge{
+    padding:9px;
+    width: 3rem;
+    height:3rem
+}
+.icon-project{
+    width: 30px;
+
+}
+.svg-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charter .nav{
+    border-bottom: 1px solid var(--db);
+}
+.timeline .pad .nav{
+    border-bottom:1px dashed #15a08b;
+}
+.charter .pad{
+    padding:2% 0;
+}
+.goals, .team{
+    height: 600px;
+    padding: 20px;
+    background-color:#f7f7f7;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.goals{
+    margin-left: 10px;
+}
+.scope, .primary{
+    height: 400px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.timeline{
+    height: 1020px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.charter p{
+    margin-bottom: 0;
+}
+.timeline p{
+    margin-bottom: 7px;
+    
+}
+.nav .fs-3{
+    color:#3C24FF;
+}
+
